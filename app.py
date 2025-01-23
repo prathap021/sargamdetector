@@ -1,3 +1,4 @@
+import os
 import tornado.ioloop
 import tornado.web
 import tornado.websocket
@@ -78,11 +79,14 @@ class WebSocketHandler(tornado.websocket.WebSocketHandler):
     def check_origin(self, origin):
         return True  # Allow connections from any origin for testing
 
+# Create the Tornado application
 application = tornado.web.Application([
     (r'/', WebSocketHandler),
 ])
 
 if __name__ == '__main__':
-    application.listen(3001)
-    print("WebSocket server started on ws://localhost:3001")
+    # Dynamically determine the port from the environment variable
+    port = int(os.environ.get("PORT", 3000))  # Fallback to 3000 if PORT is not set
+    application.listen(port)
+    print(f"WebSocket server started on port {port}")
     tornado.ioloop.IOLoop.instance().start()
