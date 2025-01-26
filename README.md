@@ -20,11 +20,10 @@ To install the dependencies, run:
 
 pip install numpy librosa matplotlib pyaudio
 
-Installation
+Installation 
+Clone this repository:
 
-    Clone this repository:
-
-git clone https://github.com/prathap021/sargamdetector
+     git clone https://github.com/prathap021/sargamdetector
 
 Navigate to the project directory:
 
