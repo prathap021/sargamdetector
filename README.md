@@ -1,4 +1,4 @@
-Sargam Detector 🎵
+Sargam Detector 🎵 
 
 A Python-based application that detects Sargam (musical notes) from audio files or real-time input. Ideal for Indian classical music enthusiasts and learners who want to analyze musical patterns.
 Features
@@ -45,6 +45,10 @@ How It Works
     Audio Processing: Uses the librosa library to extract audio features like pitch and frequency.
     Note Mapping: Converts frequencies into corresponding Sargam notes based on predefined scales.
     Real-time Processing: Captures audio from the microphone and processes it in chunks for continuous detection.
+    
+![e5w3oajq](https://github.com/user-attachments/assets/a8bd5698-ac2d-43d1-985d-422b76d4b760)
+
+https://upload.wikimedia.org/score/e/5/e5w3oajqkkbeg91t0jzivgiv1v6z6lt/e5w3oajq.mp3
 
 Contribution
 
